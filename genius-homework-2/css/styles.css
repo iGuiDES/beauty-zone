@@ -165,7 +165,7 @@ ul {
 }
 
 .banner-free-call-description {
-    max-width: 238px;
+    flex-basis: 238px;
     width: 100%;
     font-size: 12px;
     font-weight: 400;
@@ -217,12 +217,12 @@ ul {
 }
 
 .find-us-map {
-    width: 60%;
+    flex-basis: 60%;
 }
 
 .find-us-forms {
     max-height: 481px;
-    width: 40%;
+    flex-basis: 40%;
     border: none;
     border-radius: 32px;
     padding: 48px 74px;
