@@ -42,6 +42,11 @@
 }
 
 /* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -74,6 +79,10 @@ ul {
 .decoration {
     max-width: 529px;
     color: var(--color-primary-brands);
+}
+
+.decoration-text {
+    text-transform: capitalize;
 }
 
 .section {
@@ -114,6 +123,12 @@ ul {
     align-items: center;
     flex-grow: 1;
     gap: 56px;
+}
+
+.social-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
 }
 
 .social-link-icon:hover {
@@ -173,9 +188,24 @@ ul {
 }
 
 /* Service section */
+.services {
+    padding-top: 125px;
+}
+
 .services-title {
     font-size: 64px;
     font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    gap: 28px;
+}
+
+.services-description,
+.service-images {
+    flex-basis: 50%;
 }
 
 .service-description-text {
@@ -183,10 +213,44 @@ ul {
     line-height: 1.7;
 }
 
+.service-description-text:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.service-text-bold {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.service-image {
+    border-radius: 50%;
+}
+
 /* Why Choose Us section */
 .why-choose-us-title {
+    max-width: 432px;
+    margin: 0 auto 48px;
     font-size: 64px;
     font-weight: 700;
+    text-align: center;
+}
+
+.why-choose-us-lists {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+}
+
+.list-card {
+    border: 1px solid silver;
+    border-radius: 32px;
+    padding: 24px 32px;
+    text-align: center;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);;
+}
+
+.card-icon {
+    fill: var(--color-primary-brands);
 }
 
 .why-choose-us-text {
@@ -197,18 +261,68 @@ ul {
 .our-procedure-title {
     font-size: 64px;
     font-weight: 700;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.procedure-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+}
+
+.procedure-lists {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.procedure-list-img {
+    border-radius: 0 120px 0 120px;
 }
 
 .procedure-list-name {
     font-size: 22px;
     line-height: 1.1;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Carousel settings*/
+
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    border: 1px solid var(--color-primary-light);
+    background-color: var(--color-primary-brands);
+    fill: var(--color-primary-light);
 }
 
 /* Find Us section */
+.find-us {
+    padding-bottom: 96px;
+}
+
 .find-us-title {
     text-align: center;
     font-size: 64px;
     font-weight: 700;
+    margin-bottom: 48px;
 }
 
 .find-us-container {
@@ -240,6 +354,25 @@ ul {
 
 .footer {
     background-color: var(--color-primary-dark);
+    padding: 56px 0;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-nav,
+.footer-addresses {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.footer-nav,
+.footer-logo,
+.footer-links,
+.footer-addresses-group,
+.address-info {
+    flex-grow: 1;
 }
 
 .footer-link {
@@ -247,18 +380,27 @@ ul {
     font-size: 16px;
 }
 
+.footer-address-nav {
+    margin-bottom: 16px;
+}
+
+.footer-social-icon:hover {
+    fill: var(--color-primary-brands);
+}
+
 .footer-address-link {
     font-size: 16px;
+    font-style: normal;
     color: var(--color-primary-light);
 }
 
 .footer-link-decorate:hover {
     color: var(--color-primary-brands);
-    font-weight: 700;
 }
 
 .footer-address-copyright {
     font-size: 13px;
+    font-style: normal;
     color: var(--color-secondary-subtext);
 }
 
