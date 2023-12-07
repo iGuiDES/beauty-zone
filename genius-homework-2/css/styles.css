@@ -101,6 +101,7 @@ ul {
 /* Header section */
 .header {
     padding: 42px 0;
+    background: rgba(255, 255, 255, 0.25);
 }
 
 .header-container {
@@ -279,8 +280,11 @@ ul {
     align-items: center;
 }
 
-.procedure-list-img {
+.procedure-card {
+    width: 344px;
+    min-height: 456px;
     border-radius: 0 120px 0 120px;
+    background: linear-gradient(180deg, rgba(1, 28, 68, 0.00) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, #011C44 101.39%);
 }
 
 .procedure-list-name {
