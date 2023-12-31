@@ -99,12 +99,16 @@ ul {
 }
 
 /* Header section */
-.header {
+
+.site-header, header {
   position: absolute;
+}
+
+.header {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 31px 0;
+  padding: 32px 0;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(5px);
   z-index: 100;
