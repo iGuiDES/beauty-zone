@@ -398,7 +398,7 @@ ul {
     color: var(--color-primary-light);
 }
 
-.footer-link-decorate:hover {
+.link-decorate:hover {
     color: var(--color-primary-brands);
 }
 
