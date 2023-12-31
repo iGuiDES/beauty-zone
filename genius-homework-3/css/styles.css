@@ -100,11 +100,8 @@ ul {
 
 /* Header section */
 
-.site-header, header {
-  position: absolute;
-}
-
 .header {
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
