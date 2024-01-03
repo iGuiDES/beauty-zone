@@ -93,6 +93,10 @@ ul {
   color: var(--color-primary-brands);
 }
 
+article {
+  position: relative;
+}
+
 .visually-hidden {
   position: absolute;
   left: -10000px;
