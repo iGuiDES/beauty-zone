@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      content="width=device-width, user-scalable=no, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Beauty Zone</title>
   <link rel="stylesheet" href="./css/styles.css">
@@ -112,6 +112,7 @@
       <ul class="why-choose-us-lists">
         <li class="list-card">
           <article>
+            <h3 class="visually-hidden">Наша освіта</h3>
             <svg class="card-icon" width="48" height="48">
               <use href="./images/icons.svg#icon-science"></use>
             </svg>
@@ -123,6 +124,7 @@
         </li>
         <li class="list-card">
           <article>
+            <h3 class="visually-hidden">Сучасне обладнання</h3>
             <svg class="card-icon" width="48" height="48">
               <use href="./images/icons.svg#icon-medicine"></use>
             </svg>
@@ -133,6 +135,7 @@
         </li>
         <li class="list-card">
           <article>
+            <h3 class="visually-hidden">Наша мета</h3>
             <svg class="card-icon" width="48" height="48">
               <use href="./images/icons.svg#icon-crown"></use>
             </svg>
@@ -158,6 +161,7 @@
         <ul class="procedure-lists">
           <li class="procedure-item">
             <article class="procedure-card">
+              <h3 class="visually-hidden">Маска для обличчя</h3>
               <img class="procedure-card-img" src="./images/procedure-01.jpg" alt="Procedure 1">
               <span class="procedure-list-name">Маски для обличчя</span>
               <div class="procedure-gradient-overlay"></div>
@@ -165,6 +169,7 @@
           </li>
           <li class="procedure-item">
             <article class="procedure-card">
+              <h3 class="visually-hidden">Інʼєкції для обличчя</h3>
               <img class="procedure-card-img" src="./images/procedure-02.jpg" alt="Procedure 2">
               <span class="procedure-list-name">Інʼєкції для обличчя</span>
               <div class="procedure-gradient-overlay"></div>
@@ -172,6 +177,7 @@
           </li>
           <li class="procedure-item">
             <article class="procedure-card">
+              <h3 class="visually-hidden">Очищення обличчя</h3>
               <img class="procedure-card-img" src="./images/procedure-03.jpg" alt="Procedure 3">
               <span class="procedure-list-name">Очищення обличчя</span>
               <div class="procedure-gradient-overlay"></div>
@@ -205,24 +211,24 @@
             Запишіться <span class="decoration">безкоштовно</span> та отримайте подарунок
           </h3>
           <form class="appointment-form" name="appointment-form">
-              <label class="appointment-label" for="appointment-user-name">
-                <input class="appointment-input" type="text" name="appointment-user-name" id="appointment-user-name"
-                       placeholder="Ваше ім'я та прізвище" required>
-              </label>
-              <label class="appointment-label" for="appointment-user-phone">
-                <input class="appointment-input" type="tel" name="appointment-user-phone" id="appointment-user-phone"
-                       placeholder="Ваш номер телефону" pattern="\+380\d{9}" required>
-              </label>
-              <label class="appointment-label" for="appointment-user-email">
-                <input class="appointment-input" type="email" name="appointment-user-email" id="appointment-user-email"
-                       placeholder="Ваша електронна пошта" required>
-              </label>
-              <button class="main-btn-primary button" type="submit">Записатись безкоштовно</button>
-              <p class="appointment-form-privacy">
-                Натискаючи на кнопку я погоджуюсь
-                <a class="appointment-form-privacy-link link-decorate" href="#">з політикою конфіденційності</a>
-              </p>
-            </form>
+            <label class="appointment-label" for="appointment-user-name">
+              <input class="appointment-input" type="text" name="appointment-user-name" id="appointment-user-name"
+                     placeholder="Ваше ім'я та прізвище" required>
+            </label>
+            <label class="appointment-label" for="appointment-user-phone">
+              <input class="appointment-input" type="tel" name="appointment-user-phone" id="appointment-user-phone"
+                     placeholder="Ваш номер телефону" pattern="\+380\d{9}" required>
+            </label>
+            <label class="appointment-label" for="appointment-user-email">
+              <input class="appointment-input" type="email" name="appointment-user-email" id="appointment-user-email"
+                     placeholder="Ваша електронна пошта" required>
+            </label>
+            <button class="main-btn-primary button" type="submit">Записатись безкоштовно</button>
+            <p class="appointment-form-privacy">
+              Натискаючи на кнопку я погоджуюсь
+              <a class="appointment-form-privacy-link link-decorate" href="#">з політикою конфіденційності</a>
+            </p>
+          </form>
         </div>
       </div>
     </div>
@@ -290,7 +296,8 @@
           </div>
         </div>
         <div class="address-info">
-          <a class="footer-address-link footer-address-policy-title link-decorate" href="#" target="_blank">Політика конфіденційності</a>
+          <a class="footer-address-link footer-address-policy-title link-decorate" href="#" target="_blank">Політика
+            конфіденційності</a>
           <p class="footer-address-copyright">&copy; 2022 Дані захищені</p>
         </div>
       </address>
