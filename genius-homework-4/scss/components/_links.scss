@@ -1,0 +1,11 @@
+
+.social-link {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    transition: .2s ease;
+
+    &__icon:hover {
+        fill: var(--color-primary-brands);
+    }
+}

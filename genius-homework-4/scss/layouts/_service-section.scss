@@ -1,0 +1,120 @@
+.service {
+    &__title {
+        max-width: 530px;
+        padding-top: 40px;
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    &__container {
+        display: flex;
+        gap: 28px;
+    }
+
+    &__images {
+        position: relative;
+    }
+
+    &__image-left {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    &__image-right {
+        position: relative;
+        right: -45%;
+        bottom: 0;
+    }
+
+    &__description,
+    &__images {
+        flex-basis: 50%;
+    }
+
+    &__description-text {
+        font-size: 22px;
+        line-height: 1.7;
+    }
+
+    &__description-text:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__text-bold {
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+
+    &__image-left,
+    &__image-right {
+        border-radius: 50%;
+    }
+
+    &__large-star {
+        position: absolute;
+        top: 336px;
+        left: 117px;
+        fill: var(--color-primary-dark);
+        z-index: 10;
+        animation: rotate360 2s ease infinite;
+
+        @keyframes rotate360 {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    &__middle-star {
+        position: absolute;
+        fill: var(--color-primary-brands);
+        top: 32px;
+        right: -32px;
+        z-index: 10;
+        animation: bounce 4s ease infinite;
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    }
+
+    &__small-star {
+        position: absolute;
+        fill: var(--color-secondary-subtext);
+        top: 269px;
+        right: 0;
+        z-index: 10;
+        animation: starAnimation 5s ease infinite;
+
+        @keyframes starAnimation {
+            0% {
+                fill: var(--color-primary-brands);
+                transform: rotate(0);
+            }
+            50% {
+                fill: var(--color-secondary-subtext);
+                transform: scale(2);
+            }
+            100% {
+                fill: var(--color-secondary-btns);
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+
+

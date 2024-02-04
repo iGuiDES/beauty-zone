@@ -1,0 +1,44 @@
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 32px 0;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 56px;
+  }
+
+  &__link {
+    color: var(--color-primary-dark);
+    transition: .2s ease;
+  }
+
+  &__link:hover {
+    color: var(--color-primary-brands);
+  }
+}
+
+
+
