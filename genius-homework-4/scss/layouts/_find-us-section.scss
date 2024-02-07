@@ -1,28 +1,27 @@
 .find-us {
-    padding-bottom: 96px;
-}
+  padding-bottom: 96px;
 
-.find-us-title {
+  &__title {
     text-align: center;
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 48px;
-}
+  }
 
-.find-us-container {
+  &__container {
     display: flex;
     gap: 32px;
-}
+  }
 
-.find-us-map {
+  &__map {
     flex-basis: 60%;
-}
+  }
 
-.find-us-map iframe {
+  &__map iframe {
     height: 100%;
-}
+  }
 
-.find-us-forms {
+  &__forms {
     max-width: 423px;
     max-height: 500px;
     flex-basis: 40%;
@@ -30,40 +29,29 @@
     border-radius: 32px;
     padding: 48px 56px;
     background-color: var(--color-primary-dark);
-}
+  }
 
-.find-us-forms-title {
+  &__form-fields {
+    padding-bottom: 16px;
+  }
+
+  &__forms-title {
     width: 100%;
     font-size: 22px;
     font-weight: 600;
     color: var(--color-primary-light);
     text-align: center;
-}
+  }
 
-.appointment-form {
+  &__form {
     padding: 32px 0;
-}
+  }
 
-.appointment-input {
-    width: 100%;
-    padding: 18px 32px;
-    margin-bottom: 16px;
-    border: 2px solid var(--color-secondary-subtext);
-    border-radius: 32px;
-    background-color: transparent;
-    transition: border-color .2s ease;
-}
+  &__form-btn {
+    margin-bottom: 8px;
+  }
 
-.appointment-input:focus {
-    border-color: var(--color-primary-light);
-    outline: none;
-}
-
-.appointment-input::placeholder {
-    color: var(--color-primary-light);
-}
-
-.appointment-form-privacy {
+  &__form-privacy {
     max-width: 230px;
     width: 100%;
     margin: 0 auto;
@@ -71,10 +59,13 @@
     font-weight: 400;
     color: var(--color-secondary-subtext);
     text-align: center;
-}
+  }
 
-.appointment-form-privacy-link {
+  &__form-privacy-link {
     color: var(--color-secondary-subtext);
     font-weight: 400;
     text-decoration-line: underline;
+  }
 }
+
+
