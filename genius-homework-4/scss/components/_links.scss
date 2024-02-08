@@ -2,7 +2,7 @@
 .social-link {
   display: none;
 
-  @media screen and (min-width: $bp-desktop) {
+  @media screen and (min-width: $bp-tablet) {
     display: flex;
     gap: 32px;
     align-items: center;
