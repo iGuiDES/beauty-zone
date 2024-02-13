@@ -222,9 +222,6 @@ article {
   justify-content: center;
   align-items: center;
 }
-.card__item:hover {
-  transform: scale(1.02);
-}
 .card__item-content {
   border-radius: 0 120px 0 120px;
   transition: transform 0.2s ease;

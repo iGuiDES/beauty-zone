@@ -10,10 +10,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        &:hover {
-            transform: scale(1.02);
-        }
     }
 
     &__item-content {
