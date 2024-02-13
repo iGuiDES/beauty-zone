@@ -23,11 +23,19 @@
     position: relative;
     max-width: 723px;
     width: 100%;
-    padding: 42px 144px;
+    padding: 60px 10px;
     background-color: var(--color-primary-dark);
     color: var(--color-primary-light);
     border-radius: 32px;
     overflow: auto;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 42px 144px;
+    }
+
+    &__wrap {
+        text-align: center;
+    }
 
     &__btn-close {
         position: absolute;
@@ -44,17 +52,25 @@
     }
 
     &__title {
-        font-size: 64px;
+        font-size: 32px;
         line-height: 1.2;
         text-align: center;
         margin-bottom: 40px;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 64px;
+        }
     }
 
     &__text {
         max-width: 274px;
-        font-size: 22px;
+        font-size: 16px;
         text-align: center;
         margin: 0 auto 32px;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 22px;
+        }
     }
 
     &__form {
