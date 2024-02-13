@@ -118,8 +118,8 @@ article {
 
 .decorate-img {
   position: absolute;
-  bottom: -56px;
-  right: 0;
+  bottom: -100px;
+  right: -20px;
   z-index: 10;
 }
 
@@ -222,6 +222,8 @@ article {
   align-items: center;
 }
 .card__item-content {
+  max-width: 344px;
+  height: 456px;
   border-radius: 0 120px 0 120px;
   transition: transform 0.2s ease;
   overflow: hidden;
@@ -230,6 +232,7 @@ article {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .card__item-description {
   position: absolute;
@@ -241,6 +244,24 @@ article {
   left: 30%;
   color: var(--color-primary-light);
   z-index: 10;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  gap: 24px;
+}
+.pagination__button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  background-color: var(--color-secondary-subtext);
+  border-radius: 50%;
+}
+.pagination__button--active {
+  background-color: var(--color-primary-brands);
 }
 
 .section {
@@ -378,6 +399,11 @@ article {
   .banner {
     height: 650px;
     background-image: linear-gradient(89deg, #FFF 30.62%, rgba(255, 255, 255, 0.85) 41.31%, rgba(255, 255, 255, 0.19) 58.65%, rgba(255, 255, 255, 0) 72.78%), url("../images/main-bgc.png");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(89deg, #FFF 30.62%, rgba(255, 255, 255, 0.85) 41.31%, rgba(255, 255, 255, 0.19) 58.65%, rgba(255, 255, 255, 0) 72.78%), url("../images/main-bgc@2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -797,7 +823,8 @@ article {
 
 .footer {
   background-color: var(--color-primary-dark);
-  padding: 32px 90px 66px;
+  padding: 32px 20px 66px;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -860,6 +887,7 @@ article {
 @media screen and (min-width: 768px) {
   .footer__address-nav {
     display: flex;
+    flex-direction: column;
   }
 }
 .footer__address-nav li {
@@ -873,6 +901,7 @@ article {
 }
 @media screen and (min-width: 768px) {
   .footer__address-link {
+    display: block;
     font-size: 16px;
     font-style: normal;
     color: var(--color-primary-light);
